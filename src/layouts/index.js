@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { injectGlobalStyle } from '../style'
-import Header from '../components/Header'
+// import Header from '../components/Header'
 
 const TemplateWrapper = ({ children }) => {
   injectGlobalStyle()
@@ -20,7 +20,7 @@ const TemplateWrapper = ({ children }) => {
         />
         <link rel="icon" href="/favicon.png" />
       </Helmet>
-      <Header />
+      {/* <Header /> */}
       <main>{children()}</main>
     </div>
   )

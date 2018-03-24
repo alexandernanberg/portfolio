@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>logo copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="17.4654098%" y1="5.57865614%" x2="100%" y2="102.266578%" id="linearGradient-1">
+            <stop stop-color="#C21717" offset="0%"></stop>
+            <stop stop-color="#FF004F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.140000001">
+        <g id="Desktop-HD" transform="translate(-470.000000, -150.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <path d="M733.087059,650 L776.469782,597.51827 L885.082776,597.51827 L844.146953,515.646622 L880.708415,471.41683 L970,650 L733.087059,650 Z M600.550515,650 L470,650 L720,150 L829.478474,368.956948 L793.119893,413.592503 L720,267.352717 L554.917224,597.51827 L643.30032,597.51827 L600.550515,650 Z" id="logo-copy"></path>
+        </g>
+    </g>
+</svg>

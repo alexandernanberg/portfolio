@@ -30,12 +30,12 @@ export const injectGlobalStyle = () => injectGlobal`
 /* stylelint-disable */
   ${reset} 
   ${fontFace('Visby', 400, 'normal', [
-    { src: require('./assets/font/VisbyCF-Regular.woff2'), format: 'woff2' },
-    { src: require('./assets/font/VisbyCF-Regular.woff'), format: 'woff' },
+    { src: require('./assets/fonts/VisbyCF-Regular.woff2'), format: 'woff2' },
+    { src: require('./assets/fonts/VisbyCF-Regular.woff'), format: 'woff' },
   ])}
   ${fontFace('Visby', 700, 'normal', [
-    { src: require('./assets/font/VisbyCF-Bold.woff2'), format: 'woff2' },
-    { src: require('./assets/font/VisbyCF-Bold.woff'), format: 'woff' },
+    { src: require('./assets/fonts/VisbyCF-Bold.woff2'), format: 'woff2' },
+    { src: require('./assets/fonts/VisbyCF-Bold.woff'), format: 'woff' },
   ])}
 /* stylelint-enable */
 
@@ -50,7 +50,7 @@ export const injectGlobalStyle = () => injectGlobal`
     --gray300: #e0e0e0;
     --gray200: #f5f5f5;
     --gray100: #fcf8f6;
-    --red500: #fb371b;
+    --red500: #c21717;
     --blue500: #2196f3;
   }
 
@@ -80,6 +80,6 @@ export const injectGlobalStyle = () => injectGlobal`
 
   ::selection {
     color: white;
-    background-color: black;
+    background-color: var(--red500);
   }
 `
