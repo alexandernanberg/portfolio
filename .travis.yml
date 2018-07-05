@@ -9,7 +9,8 @@ cache:
     - ~/.cache
 notifications:
   email: false
-script: 
+script:
+  -
 before_deploy: npm install now --no-save
 deploy:
   - provider: script
