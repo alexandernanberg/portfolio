@@ -1,4 +1,10 @@
 {
   "name": "alexandernanberg",
-  "alias": "alexandernanberg.com"
+  "alias": "alexandernanberg.com",
+  "scale": {
+    "bru1": {
+      "min": 1,
+      "max": 1
+    }
+  }
 }

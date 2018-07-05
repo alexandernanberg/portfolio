@@ -1,5 +1,6 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import styled from 'styled-components'
+import Layout from '../components/Layout'
 import { H1, H3 } from '../components/Title'
 import heroBgUrl from '../assets/images/logo-background.svg'
 
@@ -26,13 +27,13 @@ const Hero = styled.div`
   }
 `
 
-const IndexPage = () => (
-  <Fragment>
-    <Hero>
-      <H1>Alexander Nanberg</H1>
-      <H3>Fullstack developer &amp; designer</H3>
-    </Hero>
-  </Fragment>
-)
-
-export default IndexPage
+export default function IndexPage() {
+  return (
+    <Layout>
+      <Hero>
+        <H1>Alexander Nanberg</H1>
+        <H3>Fullstack developer &amp; designer</H3>
+      </Hero>
+    </Layout>
+  )
+}

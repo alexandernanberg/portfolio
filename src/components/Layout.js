@@ -1,15 +1,14 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { injectGlobalStyle } from '../style'
-// import Header from '../components/Header'
 
-const TemplateWrapper = ({ children }) => {
+export default function Layout({ children }) {
   injectGlobalStyle()
 
   return (
-    <div>
+    <React.Fragment>
       <Helmet defaultTitle="Alexander Nanberg">
+        <html lang="en" />
         <meta
           name="description"
           content="Alexander Nanberg is a full-stack developer &amp; designer."
@@ -18,16 +17,10 @@ const TemplateWrapper = ({ children }) => {
           name="google-site-verification"
           content="zW5Qv1X5zOnTIW9JssasZ0fJO5bXG8U7tkNmoPMLmBk"
         />
+        <meta name="theme-color" content="#000" />
         <link rel="icon" href="/favicon.png" />
       </Helmet>
-      {/* <Header /> */}
-      <main>{children()}</main>
-    </div>
+      <main>{children}</main>
+    </React.Fragment>
   )
 }
-
-TemplateWrapper.propTypes = {
-  children: PropTypes.func.isRequired,
-}
-
-export default TemplateWrapper
