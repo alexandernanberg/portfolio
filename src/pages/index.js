@@ -32,7 +32,7 @@ export default function IndexPage() {
     <Layout>
       <Hero>
         <H1>Alexander Nanberg</H1>
-        <H3>Fullstack developer &amp; designer</H3>
+        <H3>Full-stack developer &amp; designer</H3>
       </Hero>
     </Layout>
   )
