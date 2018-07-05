@@ -17,8 +17,6 @@ export default function Layout({ children }) {
           name="google-site-verification"
           content="zW5Qv1X5zOnTIW9JssasZ0fJO5bXG8U7tkNmoPMLmBk"
         />
-        <meta name="theme-color" content="#000" />
-        <link rel="icon" href="/favicon.png" />
       </Helmet>
       <main>{children}</main>
     </React.Fragment>
