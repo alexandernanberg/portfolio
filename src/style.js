@@ -30,17 +30,22 @@ export const injectGlobalStyle = () => injectGlobal`
 /* stylelint-disable */
   ${reset} 
   ${fontFace('Visby', 400, 'normal', [
+    /* eslint-disable global-require */
     { src: require('./assets/fonts/VisbyCF-Regular.woff2'), format: 'woff2' },
     { src: require('./assets/fonts/VisbyCF-Regular.woff'), format: 'woff' },
   ])}
   ${fontFace('Visby', 700, 'normal', [
     { src: require('./assets/fonts/VisbyCF-Bold.woff2'), format: 'woff2' },
     { src: require('./assets/fonts/VisbyCF-Bold.woff'), format: 'woff' },
+    /* eslint-enable global-require */
   ])}
 /* stylelint-enable */
 
   :root {
+    /* Font */
     --font-family: 'Visby', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+    /* Colors */
     --gray900: #010102;
     --gray800: #424242;
     --gray700: #616161;
@@ -52,6 +57,20 @@ export const injectGlobalStyle = () => injectGlobal`
     --gray100: #fcf8f6;
     --red500: #c21717;
     --blue500: #2196f3;
+
+    /* Easings */
+    --ease-out-sine: cubic-bezier(0.39, 0.575, 0.565, 1);
+    --ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    /* Sizes */
+    --size-1: 0.8rem;
+    --size-2: 1.2rem;
+    --size-3: 1.6rem;
+    --size-4: 2.4rem;
+    --size-5: 3.2rem;
+    --size-6: 4.8rem;
+    --size-7: 5.6rem;
+    --size-8: 6.4rem;
   }
 
   *,
@@ -67,8 +86,10 @@ export const injectGlobalStyle = () => injectGlobal`
 
   body {
     font-family: var(--font-family);
-    background-color: var(--gray900);
+    text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--gray900);
   }
 
   img {

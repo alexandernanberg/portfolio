@@ -1,29 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import Layout from '../components/Layout'
 import { H1, H3 } from '../components/Title'
-import heroBgUrl from '../assets/images/logo-background.svg'
+import Hero from '../components/Hero'
+import Icon from '../components/Icon'
+import Spacer from '../components/Spacer'
 
-const Hero = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 1.2rem;
+const Link = styled(OutboundLink)`
+  font-size: var(--size-4);
   color: white;
-  text-align: center;
-  background-image: url(${heroBgUrl});
-  background-size: 260px;
-  background-position: 50% 40%;
-  background-repeat: no-repeat;
+`
 
-  & :last-child {
-    margin-bottom: 0;
-  }
+const LinkWrapper = styled.div`
+  display: flex;
+  justify-content: center;
 
-  @media (min-width: 640px) {
-    background-size: 440px;
+  & > * {
+    margin: 0 var(--size-2);
   }
 `
 
@@ -33,6 +27,30 @@ export default function IndexPage() {
       <Hero>
         <H1>Alexander Nanberg</H1>
         <H3>Full-stack developer &amp; designer</H3>
+        <Spacer h={5} />
+        <LinkWrapper>
+          <Link
+            href="https://github.com/alexandernanberg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon glyph="github" />
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/alexander-nanberg-5b9864115/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon glyph="linkedin" />
+          </Link>
+          <Link
+            href="https://dribbble.com/alexandernanberg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon glyph="dribble" />
+          </Link>
+        </LinkWrapper>
       </Hero>
     </Layout>
   )

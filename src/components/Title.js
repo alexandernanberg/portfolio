@@ -8,7 +8,7 @@ const Title = styled.h1`
 `
 
 export const H1 = Title.extend`
-  margin-bottom: 0.33em;
+  margin-bottom: 0.2em;
   font-size: 3rem;
 
   @media (min-width: 640px) {
