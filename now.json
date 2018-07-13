@@ -1,6 +1,13 @@
 {
   "name": "alexandernanberg",
+  "type": "static",
   "alias": "alexandernanberg.com",
+  "static": {
+    "public": "./public"
+  },
+  "files": [
+    "public"
+  ],
   "scale": {
     "bru1": {
       "min": 1,
