@@ -33,6 +33,7 @@ export default function IndexPage() {
             href="https://github.com/alexandernanberg"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Github"
           >
             <Icon glyph="github" />
           </Link>
@@ -40,6 +41,7 @@ export default function IndexPage() {
             href="https://www.linkedin.com/in/alexander-nanberg-5b9864115/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Linkedin"
           >
             <Icon glyph="linkedin" />
           </Link>
@@ -47,6 +49,7 @@ export default function IndexPage() {
             href="https://dribbble.com/alexandernanberg"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Dribble"
           >
             <Icon glyph="dribble" />
           </Link>
