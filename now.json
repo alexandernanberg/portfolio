@@ -2,10 +2,19 @@
   "name": "alexandernanberg",
   "type": "static",
   "alias": "alexandernanberg.com",
-  "static": {
-    "public": "./public"
-  },
   "files": [
     "public"
-  ]
+  ],
+  "static": {
+    "public": "public",
+    "headers": [
+      {
+        "source" : "/static/*",
+        "headers" : [{
+          "key" : "Cache-Control",
+          "value" : "max-age=31536000"
+        }]
+      }
+    ]
+  }
 }
