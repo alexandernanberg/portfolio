@@ -32,11 +32,9 @@ export const injectGlobalStyle = () => injectGlobal`
   ${fontFace('Visby', 400, 'normal', [
     /* eslint-disable global-require */
     { src: require('./assets/fonts/VisbyCF-Regular.woff2'), format: 'woff2' },
-    { src: require('./assets/fonts/VisbyCF-Regular.woff'), format: 'woff' },
   ])}
   ${fontFace('Visby', 700, 'normal', [
     { src: require('./assets/fonts/VisbyCF-Bold.woff2'), format: 'woff2' },
-    { src: require('./assets/fonts/VisbyCF-Bold.woff'), format: 'woff' },
     /* eslint-enable global-require */
   ])}
 /* stylelint-enable */
