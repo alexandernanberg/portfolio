@@ -6,7 +6,6 @@
   "private": true,
   "browserslist": [
     "> 5%",
-    "not ie",
     "not dead"
   ],
   "scripts": {
