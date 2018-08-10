@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Alexander Nanberg',
     siteUrl: 'https://alexandernanberg.com',
-    description: "I'm a full-stack developer & designer based in Sweden.",
+    description: 'Full-stack developer & designer based in Örebro, Sweden.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
