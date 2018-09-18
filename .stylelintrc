@@ -1,10 +1,5 @@
 {
-  "processors": [
-    "stylelint-processor-styled-components"
-  ],
   "extends": [
-    "stylelint-config-strateg",
-    "stylelint-config-styled-components"
-  ],
-  "syntax": "scss"
+    "stylelint-config-alexandernanberg",
+  ]
 }
