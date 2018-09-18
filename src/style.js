@@ -1,4 +1,4 @@
-import { css, injectGlobal } from 'styled-components'
+import { css, createGlobalStyle } from 'styled-components'
 import { reset } from 'styled-reset'
 
 export const breakpoints = {
@@ -26,7 +26,7 @@ const fontFace = (name, weight, style, fonts) => css`
   }
 ` // prettier-ignore
 
-export const injectGlobalStyle = () => injectGlobal`
+export const GlobalStyle = createGlobalStyle`
 /* stylelint-disable */
   ${reset} 
   ${fontFace('Visby', 400, 'normal', [

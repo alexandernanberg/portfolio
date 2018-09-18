@@ -1,13 +1,12 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
-import { injectGlobalStyle } from '../style'
+import { GlobalStyle } from '../style'
 
 export default function Layout({ children }) {
-  injectGlobalStyle()
-
   return (
     <React.Fragment>
+      <GlobalStyle />
       <StaticQuery
         query={graphql`
           {
