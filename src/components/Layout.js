@@ -5,7 +5,7 @@ import { GlobalStyle } from '../style'
 
 export default function Layout({ children }) {
   return (
-    <React.Fragment>
+    <>
       <GlobalStyle />
       <StaticQuery
         query={graphql`
@@ -32,6 +32,6 @@ export default function Layout({ children }) {
         )}
       </StaticQuery>
       <main>{children}</main>
-    </React.Fragment>
+    </>
   )
 }
