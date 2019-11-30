@@ -56,7 +56,7 @@
     "lint-staged": "^9.0.0",
     "prettier": "^1.11.1",
     "stylelint": "^12.0.0",
-    "stylelint-config-alexandernanberg": "^1.0.0",
+    "stylelint-config-alexandernanberg": "^1.5.2",
     "webpack-bundle-analyzer": "^3.0.0"
   }
 }
