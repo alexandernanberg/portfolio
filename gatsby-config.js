@@ -25,7 +25,7 @@ module.exports = {
         icon: 'src/assets/images/icon.png',
       },
     },
-    'gatsby-plugin-subfont',
+    // 'gatsby-plugin-subfont',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-offline',
     'gatsby-plugin-netlify',
