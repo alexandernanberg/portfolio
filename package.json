@@ -22,8 +22,7 @@
     "*.js": [
       "eslint --fix",
       "stylelint",
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   },
   "husky": {
