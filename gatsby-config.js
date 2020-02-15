@@ -27,7 +27,7 @@ module.exports = {
     },
     // 'gatsby-plugin-subfont',
     'gatsby-plugin-sitemap',
-    'gatsby-plugin-offline',
+    'gatsby-plugin-no-javascript',
     'gatsby-plugin-netlify',
   ],
 }

@@ -1,7 +1,11 @@
 {
-  "extends": ["config:base", ":preserveSemverRanges", "group:allNonMajor"],
+  "extends": [
+    "config:base",
+    ":preserveSemverRanges",
+    "group:allNonMajor",
+    "schedule:monthly"
+  ],
   "lockFileMaintenance": true,
-  "schedule": ["every weekend"],
   "automerge": true,
   "major": {
     "automerge": false
