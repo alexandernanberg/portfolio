@@ -1,13 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import Layout from '../components/Layout'
 import { H1, H3 } from '../components/Title'
 import Hero from '../components/Hero'
 import Icon from '../components/Icon'
 import Spacer from '../components/Spacer'
 
-const Link = styled(OutboundLink)`
+const Link = styled.a`
   font-size: var(--size-4);
   color: white;
 `
