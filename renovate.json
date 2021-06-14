@@ -5,7 +5,7 @@
     "group:allNonMajor",
     "schedule:monthly"
   ],
-  "lockFileMaintenance": true,
+  "postUpdateOptions": ["yarnDedupeHighest"],
   "automerge": true,
   "major": {
     "automerge": false
