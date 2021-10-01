@@ -27,3 +27,13 @@ export const H3 = styled.h3`
     font-size: 3.4rem;
   }
 `
+
+export const Text = styled.p`
+  ${baseStyle}
+  font-size: 1.6rem;
+  font-weight: 400;
+
+  @media (min-width: 640px) {
+    font-size: 1.8rem;
+  }
+`

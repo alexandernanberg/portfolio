@@ -1,10 +1,10 @@
-import React from 'react'
+import Head from 'next/head'
 import styled from 'styled-components'
-import Layout from '../components/Layout'
-import { H1, H3 } from '../components/Title'
 import Hero from '../components/Hero'
 import Icon from '../components/Icon'
+import Layout from '../components/Layout'
 import Spacer from '../components/Spacer'
+import { H1, H3 } from '../components/Text'
 
 const Link = styled.a`
   font-size: var(--size-4);
@@ -23,6 +23,9 @@ const LinkWrapper = styled.div`
 export default function IndexPage() {
   return (
     <Layout>
+      <Head>
+        <title>Alexander Nanberg</title>
+      </Head>
       <Hero>
         <H1>Alexander Nanberg</H1>
         <H3>Full-stack developer &amp; designer</H3>
@@ -48,9 +51,9 @@ export default function IndexPage() {
             href="https://dribbble.com/alexandernanberg"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Dribble"
+            aria-label="Dribbble"
           >
-            <Icon glyph="dribble" />
+            <Icon glyph="dribbble" />
           </Link>
         </LinkWrapper>
       </Hero>

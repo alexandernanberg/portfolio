@@ -1,9 +1,14 @@
 import styled from 'styled-components'
 
-const getSize = name => props =>
+const getSize = (name: string) => (props: any) =>
   props[name] ? `var(--size-${props[name]})` : undefined
 
-const Spacer = styled.div`
+interface SpacerProps {
+  h?: number
+  w?: number
+}
+
+const Spacer = styled.div<SpacerProps>`
   width: ${getSize('w')};
   height: ${getSize('h')};
 `

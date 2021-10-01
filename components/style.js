@@ -16,28 +16,23 @@ export const media = Object.keys(breakpoints).reduce((acc, key) => {
   return acc
 }, {})
 
-const fontFace = (name, weight, style, fonts) => css`
-  @font-face {
-    font-family: '${name}';
-    font-weight: ${weight};
-    font-style: ${style};
-    font-display: fallback;
-    src: ${fonts.map(font => `url('${font.src}') format('${font.format}')`).join(',')};
-  }
-` // prettier-ignore
-
 export const GlobalStyle = createGlobalStyle`
-/* stylelint-disable */
   ${reset} 
-  ${fontFace('Visby', 400, 'normal', [
-    /* eslint-disable global-require */
-    { src: require('./assets/fonts/VisbyCF-Regular.woff2'), format: 'woff2' },
-  ])}
-  ${fontFace('Visby', 700, 'normal', [
-    { src: require('./assets/fonts/VisbyCF-Bold.woff2'), format: 'woff2' },
-    /* eslint-enable global-require */
-  ])}
-/* stylelint-enable */
+  @font-face {
+    font-family: 'Visby';
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+    src: url('/fonts/VisbyCF-Regular.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Visby';
+    font-weight: 700;
+    font-style: normal;
+    font-display: fallback;
+    src: url('/fonts/VisbyCF-Bold.woff2') format('woff2');
+  }
 
   :root {
     /* Font */

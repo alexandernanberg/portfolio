@@ -1,9 +1,6 @@
-import React from 'react'
 import styled from 'styled-components'
 
-export const Svg = styled.svg.attrs({
-  xmlns: 'http://www.w3.org/2000/svg',
-})`
+export const Svg = styled.svg`
   display: inline-block;
   vertical-align: -0.125em;
   width: 1em;
@@ -12,12 +9,16 @@ export const Svg = styled.svg.attrs({
   overflow: visible;
 `
 
-export default function Icon({ glyph, ...props }) {
+type IconProps = React.SVGAttributes<SVGSVGElement> & {
+  glyph: 'dribbble' | 'github' | 'linkedin'
+}
+
+export default function Icon({ glyph, ...props }: IconProps) {
   return (
-    <Svg viewBox="0 0 24 24" {...props}>
+    <Svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
       {(() => {
         switch (glyph) {
-          case 'dribble':
+          case 'dribbble':
             return (
               <path d="M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12 12-5.383 12-12S18.617 0 12 0zm7.934 5.534a10.201 10.201 0 0 1 2.315 6.385c-.338-.072-3.727-.759-7.138-.33a31.747 31.747 0 0 0-.9-2.014c3.79-1.547 5.507-3.749 5.723-4.041zm-1.14-1.185c-.184.262-1.727 2.336-5.371 3.702a54.711 54.711 0 0 0-3.825-6c3.25-.784 6.676.061 9.197 2.298zM7.643 2.739c.27.371 2.102 2.91 3.8 5.929C6.648 9.94 2.425 9.922 1.967 9.916A10.287 10.287 0 0 1 7.642 2.74zM1.75 12.017c0-.105.002-.21.005-.314.449.01 5.416.074 10.535-1.458.293.574.573 1.157.83 1.74-3.706 1.043-7.073 4.04-8.735 6.885a10.209 10.209 0 0 1-2.635-6.853zm3.959 8.086c1.07-2.189 3.976-5.014 8.108-6.424 1.44 3.74 2.034 6.874 2.187 7.773A10.229 10.229 0 0 1 5.709 20.1zm12.018.41c-.105-.623-.65-3.624-1.991-7.308 3.212-.514 6.034.328 6.384.439a10.268 10.268 0 0 1-4.393 6.87z" />
             )

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import heroBgUrl from '../assets/images/logo-background.svg'
+import heroBgUrl from '../public/images/logo-background.svg'
 
 const Hero = styled.div`
   display: flex;
@@ -10,7 +10,7 @@ const Hero = styled.div`
   padding: 1.2rem;
   color: white;
   text-align: center;
-  background-image: url(${heroBgUrl});
+  background-image: url(${heroBgUrl.src});
   background-size: 260px;
   background-position: 50% 40%;
   background-repeat: no-repeat;

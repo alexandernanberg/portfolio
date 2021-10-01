@@ -1,5 +1,5 @@
 {
   "extends": [
-    "stylelint-config-alexandernanberg",
+    "stylelint-config-alexandernanberg"
   ]
 }
