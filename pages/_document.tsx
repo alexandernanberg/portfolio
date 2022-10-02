@@ -35,7 +35,7 @@ class MyDocument extends Document {
         <Head>
           <meta
             name="description"
-            content="Full-stack developer & designer based in Sweden."
+            content="Software engineer & designer based in Sweden."
           />
           <meta
             name="google-site-verification"

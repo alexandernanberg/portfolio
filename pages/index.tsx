@@ -1,23 +1,14 @@
 import Head from 'next/head'
 import styled from 'styled-components'
-import Hero from '../components/Hero'
-import Icon from '../components/Icon'
+import { Container } from '../components/Container'
 import Layout from '../components/Layout'
+import { Link } from '../components/Link'
 import Spacer from '../components/Spacer'
-import { H1, H3 } from '../components/Text'
-
-const Link = styled.a`
-  font-size: var(--size-4);
-  color: white;
-`
+import { H1, Text } from '../components/Text'
 
 const LinkWrapper = styled.div`
   display: flex;
-  justify-content: center;
-
-  & > * {
-    margin: 0 var(--size-2);
-  }
+  gap: var(--size-3);
 `
 
 export default function IndexPage() {
@@ -26,26 +17,29 @@ export default function IndexPage() {
       <Head>
         <title>Alexander Nanberg</title>
       </Head>
-      <Hero>
+      <Container>
         <H1>Alexander Nanberg</H1>
-        <H3>Full-stack developer &amp; designer</H3>
+        <Text>
+          Software engineer &amp; designer with a passion for building wonderful
+          user experiences.
+        </Text>
         <Spacer h={5} />
         <LinkWrapper>
           <Link
             href="https://github.com/alexandernanberg"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Github"
+            aria-label="GithHub"
           >
-            <Icon glyph="github" />
+            <span>GitHub</span> ↗
           </Link>
           <Link
             href="https://www.linkedin.com/in/alexander-nanberg-5b9864115/"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Linkedin"
+            aria-label="LinkedIn"
           >
-            <Icon glyph="linkedin" />
+            <span>LinkedIn</span> ↗
           </Link>
           <Link
             href="https://dribbble.com/alexandernanberg"
@@ -53,10 +47,10 @@ export default function IndexPage() {
             rel="noopener noreferrer"
             aria-label="Dribbble"
           >
-            <Icon glyph="dribbble" />
+            <span>Dribbble</span> ↗
           </Link>
         </LinkWrapper>
-      </Hero>
+      </Container>
     </Layout>
   )
 }

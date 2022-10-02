@@ -4,24 +4,24 @@ import { reset } from 'styled-reset'
 export const GlobalStyle = createGlobalStyle`
   ${reset} 
   @font-face {
-    font-family: 'Visby';
+    font-family: 'Inter';
     font-weight: 400;
     font-style: normal;
     font-display: fallback;
-    src: url('/fonts/VisbyCF-Regular.woff2') format('woff2');
+    src: url('/fonts/Inter-Regular.woff2') format('woff2');
   }
 
   @font-face {
-    font-family: 'Visby';
+    font-family: 'Inter';
     font-weight: 700;
     font-style: normal;
     font-display: fallback;
-    src: url('/fonts/VisbyCF-Bold.woff2') format('woff2');
+    src: url('/fonts/Inter-Bold.woff2') format('woff2');
   }
 
   :root {
     /* Font */
-    --font-family: 'Visby', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    --font-family: 'Inter', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
     /* Colors */
     --gray900: #010102;
@@ -65,7 +65,8 @@ export const GlobalStyle = createGlobalStyle`
   body {
     font-family: var(--font-family);
     text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
+    font-variant-ligatures: contextual common-ligatures;
+    font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1;
     -moz-osx-font-smoothing: grayscale;
     background-color: var(--gray900);
   }
