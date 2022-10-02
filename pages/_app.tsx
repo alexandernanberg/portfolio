@@ -1,11 +1,11 @@
 import type { AppProps } from 'next/app'
-import { GlobalStyle } from '../components/GlobalStyle'
+import { StyleSheetManager } from 'styled-components'
+import '../styles/index.css'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <>
-      <GlobalStyle />
+    <StyleSheetManager disableVendorPrefixes>
       <Component {...pageProps} />
-    </>
+    </StyleSheetManager>
   )
 }

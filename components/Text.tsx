@@ -5,6 +5,7 @@ export const H1 = styled.h1`
   font-weight: 700;
   line-height: 1.2em;
   margin-bottom: 0.2em;
+  margin-top: 0;
   font-size: 3.2rem;
   letter-spacing: -1px;
 `
@@ -15,6 +16,7 @@ export const Text = styled.p`
   font-size: 1.8rem;
   line-height: 1.5em;
   color: var(--gray600);
+  margin-top: 0;
   margin-bottom: 0.2em;
 
   @media (min-width: 640px) {
