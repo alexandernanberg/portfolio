@@ -1,7 +1,7 @@
-
 :root {
   /* Font */
-  --font-family: 'Inter var', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-family: 'Inter var', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
 
   /* Colors */
   --gray900: #010102;
