@@ -1,3 +1,7 @@
 {
-  "extends": "alexandernanberg"
+  "extends": [
+    "plugin:@next/next/recommended",
+    "alexandernanberg",
+    "alexandernanberg/typescript"
+  ]
 }

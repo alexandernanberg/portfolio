@@ -15,14 +15,16 @@
     "build": "next build",
     "start": "next start",
     "test": "echo \"Error: no test specified\" && exit 0",
-    "lint": "eslint 'src/**/*.js' && stylelint 'src/**/*.js'",
-    "format": "prettier 'src/**/*.js' --write",
+    "lint": "eslint . && prettier . --check",
+    "format": "prettier . --write",
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.js": [
+    "*.{js,tsx}": [
       "eslint --fix",
-      "stylelint",
+      "prettier --write"
+    ],
+    "*.{md}": [
       "prettier --write"
     ]
   },
@@ -41,6 +43,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
+    "@next/eslint-plugin-next": "^12.3.1",
     "@types/node": "18.7.23",
     "@types/react": "^18.0.21",
     "@types/styled-components": "^5.1.14",
@@ -49,10 +52,7 @@
     "eslint-config-alexandernanberg": "^3.0.0",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.0",
-    "postcss": "^8.4.17",
     "prettier": "^2.2.0",
-    "stylelint": "^14.0.0",
-    "stylelint-config-alexandernanberg": "^2.0.0",
     "typescript": "^4.4.3"
   }
 }

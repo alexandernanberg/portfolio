@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const getSize = (name: string) => (props: any) =>
   props[name] ? `var(--size-${props[name]})` : undefined
 

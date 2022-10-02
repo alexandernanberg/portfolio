@@ -1,20 +1,5 @@
-import { css, createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 import { reset } from 'styled-reset'
-
-export const breakpoints = {
-  large: 1170,
-  medium: 960,
-  small: 620,
-}
-
-export const media = Object.keys(breakpoints).reduce((acc, key) => {
-  acc[key] = (...args) => css`
-    @media (min-width: ${breakpoints[key]}px) {
-      ${css(...args)};
-    }
-  `
-  return acc
-}, {})
 
 export const GlobalStyle = createGlobalStyle`
   ${reset} 
