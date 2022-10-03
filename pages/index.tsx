@@ -20,8 +20,8 @@ export default function IndexPage() {
       <Container>
         <H1>Alexander Nanberg</H1>
         <Text>
-          Software engineer &amp; designer with a passion for building wonderful
-          user experiences.
+          Software engineer &amp; designer with a passion for building
+          delightful user experiences.
         </Text>
         <Spacer h={5} />
         <LinkWrapper>
