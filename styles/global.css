@@ -60,5 +60,5 @@ img {
 
 ::selection {
   color: white;
-  background-color: var(--red500);
+  background-color: var(--blue500);
 }
