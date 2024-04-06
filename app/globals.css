@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-family-sans: 'InterVar', ui-sans-serif, system-ui, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+  --color-gray-900: #181818;
+  --color-gray-400: #aeaeae;
+}
+
+@font-face {
+  font-family: 'InterVar';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  src:
+    url('/fonts/InterVariable.woff2?v=4.0') format('woff2-variations'),
+    url('/fonts/InterVariable.woff2?v=4.0') format('woff2');
+  src: url('/fonts/InterVariable.woff2?v=4.0') format('woff2')
+    tech('variations');
+}
+
+@font-face {
+  font-family: 'InterVar';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  src:
+    url('/fonts/InterVariable-Italic.woff2?v=4.0') format('woff2-variations'),
+    url('/fonts/InterVariable-Italic.woff2?v=4.0') format('woff2');
+  src: url('/fonts/InterVariable-Italic.woff2?v=4.0') format('woff2')
+    tech('variations');
+}
+
+html {
+  background-color: var(--color-gray-900);
+  color: var(--color-white);
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: contextual common-ligatures;
+  font-feature-settings:
+    'kern' 1,
+    'liga' 1,
+    'calt' 1;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  color: var(--color-white);
+  background-color: #ffffff22;
+}

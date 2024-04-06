@@ -1,7 +1,9 @@
 {
   "extends": [
-    "plugin:@next/next/recommended",
     "alexandernanberg",
     "alexandernanberg/typescript"
-  ]
+  ],
+  "rules": {
+    "react/no-unknown-property": "off"
+  }
 }
