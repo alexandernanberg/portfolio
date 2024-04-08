@@ -72,7 +72,7 @@ export default function Index() {
           rel="noopener noreferrer"
           className="underline text-gray-400 hover:text-white"
         >
-          <span>Dribble</span> ↗
+          <span>Dribbble</span> ↗
         </a>
       </div>
     </div>
