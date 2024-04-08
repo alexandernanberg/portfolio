@@ -13,8 +13,8 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="max-w-[620px] mx-auto p-4 my-20">
-      <header className="mb-16 flex gap-3 items-center">
+    <div className="max-w-[620px] mx-auto p-6 py-32">
+      <header className="mb-8 flex gap-3 items-center">
         <svg
           width="24"
           height="24"
@@ -35,7 +35,7 @@ export default function Index() {
           />
         </svg>
 
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-1.5">
           <h1 className="font-medium leading-none">Alexander Nanberg</h1>
           <span className="text-gray-400 block leading-none">
             Senior Software Engineer
@@ -43,12 +43,12 @@ export default function Index() {
         </div>
       </header>
       <p className="mt-3 text-gray-400">
-        As a software engineer, I craft delightful interfaces by blending
-        creativity with meticulous attention to detail, always aiming to push
-        the boundaries of user experience.
+        Senior software engineer based in Örebro, Sweden. I craft delightful
+        interfaces by blending creativity with meticulous attention to detail,
+        always aiming to push the boundaries of user experience.
       </p>
 
-      <h3 className="font-medium mt-12 mb-8">Connect</h3>
+      <h3 className="font-medium mt-12 mb-6">Connect</h3>
       <div className="flex gap-4">
         <a
           href="https://github.com/alexandernanberg"
