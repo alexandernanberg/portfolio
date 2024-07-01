@@ -4,9 +4,9 @@
   --font-family-sans: 'InterVar', ui-sans-serif, system-ui, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
-  --color-gray-900: hsl(180 3 7);
-  --color-gray-400: hsl(180 3 67);
-  --color-gray-200: hsl(180 3 87);
+  --color-gray-900: hsl(180 3% 7%);
+  --color-gray-400: hsl(180 3% 67%);
+  --color-gray-200: hsl(180 3% 87%);
 }
 
 @font-face {
@@ -53,5 +53,5 @@ body {
 
 ::selection {
   color: var(--color-white);
-  background-color: #ffffff22;
+  background-color: hsla(180 3 87 22);
 }
