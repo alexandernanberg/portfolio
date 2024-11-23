@@ -1,9 +1,0 @@
-{
-  "extends": [
-    "alexandernanberg",
-    "alexandernanberg/typescript"
-  ],
-  "rules": {
-    "react/no-unknown-property": "off"
-  }
-}
