@@ -45,7 +45,7 @@ export default function Index() {
       <p className="mt-3 text-gray-400">
         Senior software engineer based in Örebro, Sweden. I craft delightful
         interfaces by blending creativity with meticulous attention to detail,
-        always aiming to push the boundaries of user experience.
+        always aiming to push the boundaries of the user experience.
       </p>
 
       <h3 className="font-medium mt-12 mb-6">Connect</h3>

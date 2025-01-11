@@ -48,10 +48,6 @@ body {
     'kern' 1,
     'liga' 1,
     'calt' 1;
-  /* -moz-osx-font-smoothing: grayscale; */
-}
-
-::selection {
-  color: var(--color-white);
-  background-color: hsla(180 3 87 22);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
