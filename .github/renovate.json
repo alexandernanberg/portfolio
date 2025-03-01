@@ -1,11 +1,5 @@
 {
-  "extends": [
-    "config:recommended",
-    ":preserveSemverRanges",
-    "group:allNonMajor",
-    "schedule:monthly"
-  ],
-  "postUpdateOptions": ["yarnDedupeHighest"],
+  "extends": ["config:recommended", "group:allNonMajor", "schedule:monthly"],
   "automerge": true,
   "major": {
     "automerge": false
