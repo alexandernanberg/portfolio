@@ -4,7 +4,7 @@
   "private": true,
   "sideEffects": false,
   "type": "module",
-  "packageManager": "pnpm@10.17.1",
+  "packageManager": "pnpm@10.20.0",
   "browserslist": [
     "last 2 Chrome versions",
     "last 2 Safari versions",
@@ -33,7 +33,7 @@
     "@remix-run/node": "^2.15.2",
     "@remix-run/react": "^2.15.2",
     "@remix-run/serve": "^2.15.2",
-    "@tailwindcss/vite": "4.1.13",
+    "@tailwindcss/vite": "4.1.16",
     "clsx": "^2.1.1",
     "isbot": "^5.1.21",
     "react": "^19.0.0",
@@ -51,7 +51,7 @@
     "lint-staged": "^16.0.0",
     "postcss": "^8.4.49",
     "prettier": "^3.4.2",
-    "tailwindcss": "4.1.13",
+    "tailwindcss": "4.1.16",
     "typescript": "^5.7.3",
     "vite": "^7.0.0",
     "vite-tsconfig-paths": "^5.1.4"
