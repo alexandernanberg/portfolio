@@ -8,6 +8,7 @@ yarn-error.log
 .output
 .nitro
 .tanstack
+.vercel
 
 # Other
 .DS_Store
