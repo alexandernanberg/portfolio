@@ -1,5 +1,7 @@
 {
   "github": {
     "silent": true
-  }
+  },
+  "framework": "tanstack-start",
+  "buildCommand": "pnpm build"
 }

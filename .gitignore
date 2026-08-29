@@ -5,7 +5,10 @@ node_modules
 yarn-error.log
 
 # Build directory
-.next
+.output
+.nitro
+.tanstack
+.vercel
 
 # Other
 .DS_Store
