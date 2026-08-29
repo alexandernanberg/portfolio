@@ -1,8 +1,20 @@
 {
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "editor.formatOnSave": true,
+  "[css]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[json][jsonc]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
   "[typescript][typescriptreact]": {
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": "explicit"
-    }
+    "editor.defaultFormatter": "oxc.oxc-vscode"
   },
   "tailwindCSS.experimental.classRegex": [
     ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],

@@ -1,17 +1,20 @@
-import type { MetaFunction } from '@remix-run/node'
+import { createFileRoute } from '@tanstack/react-router'
 
-export const meta: MetaFunction = () => {
-  return [
-    { title: 'Alexander Nanberg' },
-    {
-      name: 'description',
-      content:
-        'Software engineer with a passion for building delightful user experiences',
-    },
-  ]
-}
+export const Route = createFileRoute('/')({
+  head: () => ({
+    meta: [
+      { title: 'Alexander Nanberg' },
+      {
+        name: 'description',
+        content:
+          'Software engineer with a passion for building delightful user experiences',
+      },
+    ],
+  }),
+  component: Index,
+})
 
-export default function Index() {
+function Index() {
   return (
     <div className="max-w-[620px] mx-auto p-6 py-32">
       <header className="mb-8 flex gap-3 items-center">

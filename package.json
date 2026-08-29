@@ -2,58 +2,58 @@
   "name": "@alexandernanberg/portfolio",
   "version": "0.0.0",
   "private": true,
-  "sideEffects": false,
   "type": "module",
-  "packageManager": "pnpm@10.34.5",
+  "sideEffects": false,
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite dev",
+    "start": "node .output/server/index.mjs",
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "typecheck": "tsc --noEmit",
+    "lint": "oxlint && oxfmt --check",
+    "format": "oxfmt",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "4.3.3",
+    "@tanstack/react-router": "^1.170.32",
+    "@tanstack/react-start": "^1.168.49",
+    "clsx": "^2.1.1",
+    "nitro": "3.0.260610-beta",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^5.2.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.0.0",
+    "oxfmt": "^0.65.0",
+    "oxlint": "^1.80.0",
+    "oxlint-config-alexandernanberg": "^1.2.1",
+    "oxlint-tsgolint": "^7.0.2001",
+    "tailwindcss": "4.3.3",
+    "typescript": "^5.7.3",
+    "vite": "^7.0.0",
+    "vite-tsconfig-paths": "^5.1.4"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "oxlint --fix --max-warnings=0",
+      "oxfmt"
+    ],
+    "*.{json,md}": [
+      "oxfmt"
+    ]
+  },
   "browserslist": [
     "last 2 Chrome versions",
     "last 2 Safari versions",
     "last 2 iOS versions",
     "last 2 Firefox versions"
   ],
-  "scripts": {
-    "build": "remix vite:build",
-    "dev": "remix vite:dev",
-    "start": "remix-serve ./build/server/index.js",
-    "test": "echo \"Error: no test specified\" && exit 0",
-    "lint": "eslint . --max-warnings=0 && prettier . --check",
-    "format": "prettier . --write",
-    "prepare": "husky"
-  },
-  "lint-staged": {
-    "*.{js,tsx}": [
-      "eslint --fix --max-warnings=0",
-      "prettier --write"
-    ],
-    "*.md": [
-      "prettier --write"
-    ]
-  },
-  "dependencies": {
-    "@remix-run/node": "^2.15.2",
-    "@remix-run/react": "^2.15.2",
-    "@remix-run/serve": "^2.15.2",
-    "@tailwindcss/vite": "4.3.3",
-    "clsx": "^2.1.1",
-    "isbot": "^5.1.21",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "tailwind-merge": "^3.0.0"
-  },
-  "devDependencies": {
-    "@remix-run/dev": "^2.15.2",
-    "@types/node": "^24.0.0",
-    "@types/react": "^19.0.0",
-    "autoprefixer": "^10.4.20",
-    "eslint": "^9.18.0",
-    "eslint-config-alexandernanberg": "^4.0.1",
-    "husky": "^9.1.7",
-    "lint-staged": "^16.0.0",
-    "postcss": "^8.4.49",
-    "prettier": "^3.4.2",
-    "tailwindcss": "4.3.3",
-    "typescript": "^5.7.3",
-    "vite": "^7.0.0",
-    "vite-tsconfig-paths": "^5.1.4"
-  }
+  "packageManager": "pnpm@10.34.5"
 }
