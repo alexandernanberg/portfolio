@@ -2,32 +2,16 @@
   "name": "@alexandernanberg/portfolio",
   "version": "0.0.0",
   "private": true,
-  "sideEffects": false,
   "type": "module",
-  "packageManager": "pnpm@10.34.8",
-  "browserslist": [
-    "last 2 Chrome versions",
-    "last 2 Safari versions",
-    "last 2 iOS versions",
-    "last 2 Firefox versions"
-  ],
+  "sideEffects": false,
   "scripts": {
     "build": "remix vite:build",
     "dev": "remix vite:dev",
     "start": "remix-serve ./build/server/index.js",
     "test": "echo \"Error: no test specified\" && exit 0",
-    "lint": "eslint . --max-warnings=0 && prettier . --check",
-    "format": "prettier . --write",
+    "lint": "oxlint --max-warnings=0 && oxfmt --check",
+    "format": "oxfmt --write",
     "prepare": "husky"
-  },
-  "lint-staged": {
-    "*.{js,tsx}": [
-      "eslint --fix --max-warnings=0",
-      "prettier --write"
-    ],
-    "*.md": [
-      "prettier --write"
-    ]
   },
   "dependencies": {
     "@remix-run/node": "^2.17.5",
@@ -45,15 +29,32 @@
     "@types/node": "^24.19.2",
     "@types/react": "^19.3.0",
     "autoprefixer": "^10.6.1",
-    "eslint": "^10.13.0",
-    "eslint-config-alexandernanberg": "^4.0.5",
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0",
+    "oxfmt": "^0.74.0",
+    "oxlint": "^1.89.0",
+    "oxlint-config-alexandernanberg": "^1.2.1",
+    "oxlint-tsgolint": "^7.0.2005",
     "postcss": "^8.5.31",
-    "prettier": "^3.9.10",
     "tailwindcss": "4.3.3",
-    "typescript": "^6.0.3",
+    "typescript": "^7.0.2",
     "vite": "^8.3.5",
     "vite-tsconfig-paths": "^6.1.1"
-  }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "oxlint --fix --max-warnings=0",
+      "oxfmt --write"
+    ],
+    "*.{json,md,css}": [
+      "oxfmt --write"
+    ]
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Safari versions",
+    "last 2 iOS versions",
+    "last 2 Firefox versions"
+  ],
+  "packageManager": "pnpm@10.34.8"
 }
