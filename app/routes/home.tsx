@@ -1,6 +1,6 @@
-import type { MetaFunction } from '@remix-run/node'
+import type { Route } from './+types/home'
 
-export const meta: MetaFunction = () => {
+export const meta: Route.MetaFunction = () => {
   return [
     { title: 'Alexander Nanberg' },
     {

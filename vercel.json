@@ -1,4 +1,5 @@
 {
+  "framework": "react-router",
   "github": {
     "silent": true
   }
