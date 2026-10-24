@@ -4,7 +4,7 @@
   "private": true,
   "sideEffects": false,
   "type": "module",
-  "packageManager": "pnpm@10.34.5",
+  "packageManager": "pnpm@10.34.8",
   "browserslist": [
     "last 2 Chrome versions",
     "last 2 Safari versions",
