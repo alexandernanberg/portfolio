@@ -57,5 +57,5 @@
     "last 2 iOS versions",
     "last 2 Firefox versions"
   ],
-  "packageManager": "pnpm@10.34.8"
+  "packageManager": "pnpm@12.15.0"
 }
