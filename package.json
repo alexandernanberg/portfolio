@@ -30,30 +30,30 @@
     ]
   },
   "dependencies": {
-    "@remix-run/node": "^2.15.2",
-    "@remix-run/react": "^2.15.2",
-    "@remix-run/serve": "^2.15.2",
+    "@remix-run/node": "^2.17.5",
+    "@remix-run/react": "^2.17.5",
+    "@remix-run/serve": "^2.17.5",
     "@tailwindcss/vite": "4.3.3",
     "clsx": "^2.1.1",
-    "isbot": "^5.1.21",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "tailwind-merge": "^3.0.0"
+    "isbot": "^5.2.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "tailwind-merge": "^3.7.0"
   },
   "devDependencies": {
-    "@remix-run/dev": "^2.15.2",
-    "@types/node": "^24.0.0",
-    "@types/react": "^19.0.0",
-    "autoprefixer": "^10.4.20",
-    "eslint": "^9.18.0",
-    "eslint-config-alexandernanberg": "^4.0.1",
+    "@remix-run/dev": "^2.17.5",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "autoprefixer": "^10.6.1",
+    "eslint": "^10.13.0",
+    "eslint-config-alexandernanberg": "^4.0.5",
     "husky": "^9.1.7",
-    "lint-staged": "^16.0.0",
-    "postcss": "^8.4.49",
-    "prettier": "^3.4.2",
+    "lint-staged": "^17.6.0",
+    "postcss": "^8.5.31",
+    "prettier": "^3.9.10",
     "tailwindcss": "4.3.3",
-    "typescript": "^5.7.3",
-    "vite": "^7.0.0",
-    "vite-tsconfig-paths": "^6.0.0"
+    "typescript": "^6.0.3",
+    "vite": "^8.3.5",
+    "vite-tsconfig-paths": "^6.1.1"
   }
 }
