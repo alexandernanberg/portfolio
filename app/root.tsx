@@ -1,14 +1,10 @@
-import type { LinksFunction } from '@remix-run/node'
-import {
-  Links,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-} from '@remix-run/react'
+import { Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router'
+import type { Route } from './+types/root'
 import styles from './globals.css?url'
 
-export const links: LinksFunction = () => [{ rel: 'stylesheet', href: styles }]
+export const links: Route.LinksFunction = () => [
+  { rel: 'stylesheet', href: styles },
+]
 
 // TODO: meta author, twitter, og,
 

@@ -12,3 +12,6 @@ yarn-error.log
 
 # Remix build output
 build
+
+# React Router generated types
+.react-router
